@@ -29,7 +29,7 @@ var Config = async function(accounts) {
     const appContract = await FlightSuretyApp.new(dataContract.address, { 
       from: appContractOwner 
     });
-    await dataContract.setAppContract(appContract.address, { 
+    await dataContract.setCallerContractAddress(appContract.address, { 
       from: accounts[0] 
     });
     await dataContract.setOperatingStatus(true, {

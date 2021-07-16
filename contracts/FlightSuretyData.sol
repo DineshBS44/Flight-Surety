@@ -40,7 +40,7 @@ contract FlightSuretyData {
     /********************************************************************************************/
     /*                                       EVENT DEFINITIONS                                  */
     /********************************************************************************************/
-    event ChangedcallerContract(
+    event ChangedCallerContract(
         address indexed oldAddress,
         address indexed newAddress
     );
@@ -120,10 +120,10 @@ contract FlightSuretyData {
      *
      * This allows contract owner to change app contract address, in case a new app is present
      */
-    function setcallerContractAddress(address _callerContract) external requireContractOwner {
+    function setCallerContractAddress(address _callerContract) external requireContractOwner {
         callerContract = _callerContract;
 
-        emit ChangedcallerContract(callerContract, _callerContract);
+        emit ChangedCallerContract(callerContract, _callerContract);
     }
 
     /**
@@ -131,7 +131,7 @@ contract FlightSuretyData {
      *
      * This allows contract owner to fetch current app contract address
      */
-    function getcallerContract() external view requireContractOwner returns (address) {
+    function getCallerContract() external view requireContractOwner returns (address) {
         return callerContract;
     }
 

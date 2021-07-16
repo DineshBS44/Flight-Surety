@@ -6,32 +6,32 @@
 		"flights": [
 			{
 				"name": "FL-0",
-				"timestamp": 1626391178,
-				"airlineName": "Crypto Airlines",
+				"timestamp": 1626472644,
+				"airlineName": "DApp Airlines",
 				"airline": "0xDd76Ea7DED3d8B60a6fb8a027319056771CC398C"
 			},
 			{
 				"name": "FL-1",
-				"timestamp": 1626373178,
-				"airlineName": "Bitcoin Airlines",
+				"timestamp": 1626483444,
+				"airlineName": "Air India",
 				"airline": "0x983421267FCabA7e8b732a5a9a55c7A693C9f64B"
 			},
 			{
 				"name": "FL-2",
-				"timestamp": 1626369578,
-				"airlineName": "Ethereum Airlines",
+				"timestamp": 1626458245,
+				"airlineName": "SpiceJet",
 				"airline": "0x9De1F528eab3a1D0a891539CDa617D351657991f"
 			},
 			{
 				"name": "FL-3",
-				"timestamp": 1626380379,
-				"airlineName": "Tether Airlines",
+				"timestamp": 1626454645,
+				"airlineName": "GoAir",
 				"airline": "0xFDA6C624B199AE4Dd21819Eeaf46884bF6EA7dF0"
 			},
 			{
 				"name": "FL-4",
-				"timestamp": 1626362379,
-				"airlineName": "Binance Airlines",
+				"timestamp": 1626479845,
+				"airlineName": "Vistara",
 				"airline": "0x2A6B973996D8CA0AC3489C542eCB9cC76aE25422"
 			}
 		]
