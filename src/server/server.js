@@ -20,7 +20,12 @@ OracleRequest({
     if(error) {return}
 
     const statusCode = sample(FLIGHT_STATUS_CODES);
-    const { index, airline, flight, timestamp  } = event.returnValues;
+    const { 
+        index, 
+        airline, 
+        flight, 
+        timestamp  
+    } = event.returnValues;
     const intIndex = parseInt(index);
 
     let selectedOracles = [];
