@@ -19,7 +19,7 @@ contract FlightSuretyData {
     }
 
     struct Airline {
-        int8 id;
+        uint8 id;
         string name;
         bool consensus;
         int8 voteCount;
@@ -32,7 +32,7 @@ contract FlightSuretyData {
     uint8 private constant WITHDRAWN_INSURANCE = 2;
 
     mapping(bytes32 => Insurance) insurances; // key => Insurance
-    int8 totalCountAirlines; // number of airlines
+    uint8 totalCountAirlines; // number of airlines
 
     mapping(address => Airline) airlines; // airlineAddress => Airline
     mapping(address => mapping(address => bool)) votes; // voterAddress => airlineAddress
@@ -158,7 +158,7 @@ contract FlightSuretyData {
      */
     function getAirline(address addressAirline) external view
       returns (
-          int8 id,
+          uint8 id,
           string memory name,
           bool consensus,
           int8 voteCount,
@@ -183,7 +183,7 @@ contract FlightSuretyData {
     /**
      * @dev Get airline id from its address
      */
-    function getAirlineId(address addressAirline) external view returns (int8 id) {
+    function getAirlineId(address addressAirline) external view returns (uint8 id) {
         id = airlines[addressAirline].id;
     }
 
@@ -197,7 +197,7 @@ contract FlightSuretyData {
     /**
      * @dev Get the total number of airlines registered
      */
-    function gettotalCountAirlines() external view returns (int8 count) {
+    function getTotalCountAirlines() external view returns (uint8 count) {
         count = totalCountAirlines;
     }
 
