@@ -1,36 +1,36 @@
 {
 	"localhost": {
 		"url": "http://localhost:7545",
-		"dataAddress": "0x3A5854BFa4825e52520E0C363d8c6B6D0375B2B8",
-		"appAddress": "0x255D4B5c3AC0335d39e5F3AF4D2f60dEa202c2dF",
+		"dataAddress": "0x5db9709999739Bb3B31E1ee7B21a698cEf4A23AA",
+		"appAddress": "0x1e5c4Cc920ae9397a8F5768107bA8eEc54f9Ac3F",
 		"flights": [
 			{
 				"name": "FL-0",
-				"timestamp": 1626472644,
-				"airlineName": "DApp Airlines",
+				"timestamp": 1626463917,
+				"airlineName": "Indigo",
 				"airline": "0xDd76Ea7DED3d8B60a6fb8a027319056771CC398C"
 			},
 			{
 				"name": "FL-1",
-				"timestamp": 1626483444,
+				"timestamp": 1626481917,
 				"airlineName": "Air India",
 				"airline": "0x983421267FCabA7e8b732a5a9a55c7A693C9f64B"
 			},
 			{
 				"name": "FL-2",
-				"timestamp": 1626458245,
+				"timestamp": 1626485517,
 				"airlineName": "SpiceJet",
 				"airline": "0x9De1F528eab3a1D0a891539CDa617D351657991f"
 			},
 			{
 				"name": "FL-3",
-				"timestamp": 1626454645,
+				"timestamp": 1626471117,
 				"airlineName": "GoAir",
 				"airline": "0xFDA6C624B199AE4Dd21819Eeaf46884bF6EA7dF0"
 			},
 			{
 				"name": "FL-4",
-				"timestamp": 1626479845,
+				"timestamp": 1626485518,
 				"airlineName": "Vistara",
 				"airline": "0x2A6B973996D8CA0AC3489C542eCB9cC76aE25422"
 			}
@@ -38,53 +38,53 @@
 		"oracles": {
 			"0x612142957dd9FD570cD5232546aFE23eB5A31B48": [
 				6,
-				4,
-				5
+				2,
+				8
 			],
 			"0xDd76Ea7DED3d8B60a6fb8a027319056771CC398C": [
+				3,
 				9,
-				0,
-				5
+				6
 			],
 			"0x983421267FCabA7e8b732a5a9a55c7A693C9f64B": [
 				1,
 				5,
-				0
+				8
 			],
 			"0x9De1F528eab3a1D0a891539CDa617D351657991f": [
-				9,
-				8,
-				4
+				7,
+				5,
+				0
 			],
 			"0xFDA6C624B199AE4Dd21819Eeaf46884bF6EA7dF0": [
-				8,
-				3,
-				4
+				9,
+				2,
+				1
 			],
 			"0x2A6B973996D8CA0AC3489C542eCB9cC76aE25422": [
 				3,
-				0,
-				1
+				5,
+				4
 			],
 			"0xDB36bF20e12296bB70866A5862d1Fb0f7A829419": [
+				0,
 				3,
-				5,
-				1
+				7
 			],
 			"0xE7Dc95D98f94cC191B5AeeEbDD8540EFC77ed177": [
-				0,
-				2,
+				4,
+				1,
 				7
 			],
 			"0x27341F7cC10BDbc5C4147622DC1C3d336BF933A9": [
-				8,
-				9,
-				5
+				0,
+				3,
+				6
 			],
 			"0xc8321ADaFAf9d500477aD00E69D4fAC3709b3dDe": [
+				3,
 				9,
-				2,
-				7
+				6
 			]
 		}
 	}

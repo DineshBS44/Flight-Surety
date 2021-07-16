@@ -43,6 +43,7 @@
     "@truffle/hdwallet-provider": "1.4.0",
     "ganache-cli": "^6.12.2",
     "lit-html": "^1.4.1",
+    "lodash": "^4.17.21",
     "openzeppelin-solidity": "^4.2.0",
     "truffle-hdwallet-provider": "^1.0.17",
     "truffle-plugin-verify": "^0.5.11",

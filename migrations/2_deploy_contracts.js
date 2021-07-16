@@ -2,7 +2,7 @@ const fs = require('fs');
 const FlightSuretyData = artifacts.require("FlightSuretyData");
 const FlightSuretyApp = artifacts.require("FlightSuretyApp");
 
-const airlineNames = ['DApp Airlines', 'Air India', 'SpiceJet', 'GoAir', 'Vistara', 'TruJet'];
+const airlineNames = ['Indigo', 'Air India', 'SpiceJet', 'GoAir', 'Vistara', 'TruJet'];
 // The names of different airlines that are going to interact with our smart contract
 
 module.exports = async function(deployer, _, accs) {

@@ -36,7 +36,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -75,7 +76,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -147,7 +149,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -184,7 +187,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -210,7 +214,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -281,7 +286,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -23708,9 +23714,37 @@
     "name": "solc",
     "version": "0.8.6+commit.11564f7e.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0x561b58fa91f5f5832f3211a7ba87ad7f71d12b22fd4ed5c2d6624cf282cefcf8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "oldAddress",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newAddress",
+              "type": "address"
+            }
+          ],
+          "name": "ChangedCallerContract",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x5db9709999739Bb3B31E1ee7B21a698cEf4A23AA",
+      "transactionHash": "0x9b184d8bdb86268696e6f69dd7e9d712a0b81c6dcf1d041c031e406b1f7e7626"
+    }
+  },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-16T13:44:40.211Z",
+  "updatedAt": "2021-07-16T16:32:08.290Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {

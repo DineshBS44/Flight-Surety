@@ -35,7 +35,7 @@ var Config = async function(accounts) {
     await dataContract.setOperatingStatus(true, {
       from: dataContractOwner
     });
-    await appContract.registerAirline(appContractOwner, 'DApp Airlines', { 
+    await appContract.registerAirline(appContractOwner, 'Indigo', { 
       from: appContractOwner 
     });
     await appContract.sendTransaction({ 

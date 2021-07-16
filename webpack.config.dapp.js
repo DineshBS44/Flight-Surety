@@ -1,5 +1,7 @@
-const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin"); // to resolve errors in HtmlWebPack plugin
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const path = require("path");
 
 module.exports = {
   entry: ["babel-polyfill", path.join(__dirname, "src/dapp")],
@@ -10,30 +12,37 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        use: "babel-loader",
+        test: /\.m?js$/,
         exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif)$/i,
         use: ["file-loader"],
       },
       {
         test: /\.html$/,
-        use: "html-loader",
+        loader: "html-loader",
         exclude: /node_modules/,
       },
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(), // to resolve errors in HtmlWebPack plugin with the webpack
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/dapp/index.html"),
+      template: path.join(__dirname, "src/dapp/index.ejs"),
     }),
   ],
+  devtool: "inline-source-map",
   resolve: {
     extensions: [".js"],
   },
